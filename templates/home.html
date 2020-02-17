@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+    {% for post in posts %}
+        <h1>{{post.title}}</h1>
+        <p>by {{post.author}} on {{post.date_published}}</p>
+        <p>{{post.content}}</p>
+    {% endfor %}
